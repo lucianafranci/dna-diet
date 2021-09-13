@@ -25,6 +25,9 @@ Python project that inform about diet of amino acid using DNA.
 pipenv install numpy biopython matplotlib
 others: terminaltables halo
 
+## Usos
+### demo python demo.py 
+
 ## References
 Rebel Coder - Bioinformatics in Python: DNA Toolkit - 
 [Youtube link/Rebel Coder](https://www.youtube.com/c/rebelCoderBio/videos)
