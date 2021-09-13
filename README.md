@@ -1,5 +1,5 @@
 
-# Proyecto Feria de Ciencias 2021
+# Reina del Mundo's Science Fair Projects and Experiments (Peru/2021)
 ## DNA Diet
 Python project that inform about diet of amino acid using DNA.
 
@@ -10,9 +10,16 @@ Python project that inform about diet of amino acid using DNA.
  - SEBASTIAN CASTILLO
 
 ## Colegio Reina del Mundo
+
 [webpage: https://www.rdm.edu.pe/](https://www.rdm.edu.pe/)
 
+## Languaje
+
+ - Python
+
+
 ## Installation
+
 [GitHub](https://github.com/lucianafranci/dna-diet)
 
 pipenv install numpy biopython matplotlib
