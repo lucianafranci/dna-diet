@@ -62,3 +62,63 @@ RNA_Codons = {
     "UAU": "Y", "UAC": "Y",
     "UAA": "_", "UAG": "_", "UGA": "_"
 }
+
+AMINOS = ["A", "C", "D", "E", "F", "G", "H", "I", "K", "L",
+          "M", "N", "P", "Q", "R", "S", "T", "V", "W", "Y", "_"]
+
+#
+# Nombre de cada nucleotido
+AMINO_NAME = {
+    "A": "ALANINE",
+    "C": "CISTEINE",
+    "D": "ASPARTIC ACID",
+    "E": "GLUTAMIC ACID",
+    "F": "PHENYLALANINE",
+    "G": "GLYCINE",
+    "H": "HISTIDINE",
+    "I": "ISOLEUCINE",
+    "K": "LYSINE",
+    "L": "LEUCINE",
+    "M": "METHIONINE",
+    "N": "ASPARAGINE",
+    "P": "PROLINE",
+    "Q": "GLUTAMINE",
+    "R": "ARGININE",
+    "S": "SERINE",
+    "T": "THREONINE",
+    "V": "VALINE",
+    "W": "THRYPTOPHAN",
+    "Y": "TYROSINE",
+    "_": "END"
+}
+
+# Relación aminoacido / comida
+# Pendiente
+AMINO_FOOD = {
+    "A": "ZAPALLO",
+    "C": "ZAPALLO",
+    "D": "ZAPALLO",
+    "E": "ZAPALLO",
+    "F": "ZAPALLO",
+    "G": "ZAPALLO",
+    "H": "ZAPALLO",
+    "I": "ZAPALLO",
+    "K": "ZAPALLO",
+    "L": "MANZANA", "M": "MANZANA", "R": "MANZANA",
+    "N": "ZAPALLO",
+    "P": "ZAPALLO",
+    "Q": "ZAPALLO",
+    "R": "ZAPALLO",
+    "S": "ZAPALLO",
+    "T": "ZAPALLO",
+    "V": "ZAPALLO",
+    "W": "ZAPALLO",
+    "Y": "ZAPALLO",
+    "_": "ZAPALLO"
+}
+
+# pendiente
+PROTEINS_FOOD = {
+    "MTALVVLVRRGS": "PAPA", "MTALVVLVRRSS": "PAPA",
+    "MTALVVLVRRGS": "ZAPALLO"
+}

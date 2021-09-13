@@ -1,3 +1,5 @@
+from Bio import SeqIO
+
 
 def colored(seq):
     """Retorna secuencia coloreada"""
@@ -21,7 +23,20 @@ def colored(seq):
     return tmpStr + '\033[0;0m'
 
 
-def readFileToList(filePath):
+def readFileToList(input_file):
     """Reading a fila an returning a list of lines"""
-    with open(filePath, 'r') as f:
+    with open(input_file, 'r') as f:
         return[l.strip() for l in f.readlines()]
+
+
+def readFastaFile(input_file):
+    dna_sequece = ''
+    for seq_record in SeqIO.parse(input_file, "fasta"):
+        # print(seq_record.id)
+        # print(repr(seq_record.seq))
+        # print(len(seq_record))
+        dna_sequece = dna_sequece + seq_record.seq
+
+    # limpiar caracteres raros
+    dna_sequece = dna_sequece.replace("N", "")
+    return dna_sequece

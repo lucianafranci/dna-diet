@@ -8,7 +8,9 @@ import random
 
 
 def imprimirDNATabla():
-    randDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(50)])
+    #randDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(100)])
+    #randDNAStr = 'CCGAACGATCGTGGTTCCCCACTTCGTAGACCAGTCGATGTCGTTTGGGAGTGATTGAGTAATTCCTCCACGCGCATGAATACTAATGCGGCGCTCCACC'
+    randDNAStr = 'CTCCACTCGTAATCTACAGGACCCTCCTCAGACATCTTAGCACCGGTGAC'
     DNAStr = validateSeq(randDNAStr)
 
     # [1] secuencia ADN

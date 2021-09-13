@@ -2,9 +2,9 @@ from DNAToolkit import *
 from utilities import colored, readFastaFile
 import random
 
-randDNAStr = 'TGGCTATAATAACGCTCCCACGGGTTGATGCCTTGGCAAAAGTTTGGACTATCGGTGGGACGAGACCACTGTCAGTACACGGTCCTAGCAAACACTGCCG'
+#randDNAStr = 'TGGCTATAATAACGCTCCCACGGGTTGATGCCTTGGCAAAAGTTTGGACTATCGGTGGGACGAGACCACTGTCAGTACACGGTCCTAGCAAACACTGCCG'
 #randDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(50)])
-#randDNAStr = readFastaFile('fasta-dna-covid.txt')
+randDNAStr = readFastaFile('fasta-dna-covid.txt')
 
 DNAStr = validateSeq(randDNAStr)
 print('---------------------------------------------------------------------------')
@@ -56,3 +56,5 @@ print('[PROCESO N° 9] + Not found amino names:')
 print(f'Total not found amino count: {amino_not_present(aminoStr)}')
 
 print('---------------------------------------------------------------------------')
+print('[PROCESO N° 10] - Generate chart:')
+amino_chart(aminoStr)

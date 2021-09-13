@@ -1,4 +1,6 @@
 import collections
+import numpy as np
+import matplotlib.pyplot as plt
 from typing import Counter
 from structures import *
 
@@ -111,3 +113,89 @@ def proteins_from_rf(aa_seq):
             for i in range(len(current_pos)):
                 current_pos[i] += aa
     return proteins
+
+
+def name_from_amino(aa_seq, init_pos=0):
+    """Translates a DNA sequence into an aminoacid sequence"""
+    aa_seq_unique = list(dict.fromkeys(aa_seq))
+    aa_seq_unique = sorted(aa_seq_unique)
+
+    # contar los aa
+    amino_count = countAminoFrequency(aa_seq)
+    #print(f'>>>> {amino_count["A"]}')
+
+    # de la lista de amino, mostrar los no repetidos
+    print('Amino encontrados...')
+    for amino in aa_seq_unique:
+        contador = 0
+        if amino != "_":
+            print(f' {amino} - {AMINO_NAME[amino]} ({amino_count[amino]})')
+            contador = contador + 1
+
+    print(f'Total Amino count: {len(aa_seq_unique)}')
+    print(f'Total Amino count: {amino_count}')
+    return
+
+
+def amino_not_present(aa_seq):
+    """Identify aminos not present"""
+    aa_seq_unique = list(dict.fromkeys(aa_seq))
+    # aa_seq_unique = sorted(aa_seq_unique)
+    # print(aa_seq_unique)
+    # print(AMINOS)
+    aa_not_found = np.setdiff1d(AMINOS, aa_seq_unique, False).tolist()
+    # print(aa_not_found)
+
+    # de la lista de amino, mostrar los no repetidos
+    print('Amino no encontrados...')
+    for amino in aa_not_found:
+        # contador = 0
+        if amino != "_":
+            print(' [' + amino + '] - ' + AMINO_NAME[amino])
+            # contador = contador + 1
+    return len(aa_not_found)
+
+
+def countAminoFrequency(seq):
+    """Cuenta cantidad de aminoacids en una secuencia"""
+    # diccionario
+    tmpFreqDict = {"A": 0, "C": 0, "D": 0, "E": 0, "F": 0, "G": 0, "H": 0, "I": 0, "K": 0, "L": 0,
+                   "M": 0, "N": 0, "P": 0, "Q": 0, "R": 0, "S": 0, "T": 0, "V": 0, "W": 0, "Y": 0, "_": 0}
+    for aa in seq:
+        tmpFreqDict[aa] += 1
+    return tmpFreqDict
+
+
+def food_from_amino(aa_seq, init_pos=0):
+    """Translates a DNA sequence into an aminoacid sequence"""
+    aa_seq_unique = list(dict.fromkeys(aa_seq))
+
+    # de la lista de amino, mostrar los no repetidos
+
+    for amino in aa_seq_unique:
+        # proteins.append(AMINO_NAME[aa])
+        if amino != "_":
+            print('Amino encontrado: [' + amino + '] - ' + AMINO_FOOD[amino])
+
+    return ''
+
+
+def amino_chart(aa_seq):
+    """Genera chart de barras de contadores de amino"""
+    # diccionarios de contadores de aminoacid
+    amino_count = countAminoFrequency(aa_seq)
+
+    amino = []  # aminos
+    contador = []  # cantidad de aminos
+    for element in amino_count:
+        amino.append(element)
+        contador.append(amino_count[element])
+
+    #print(f'Aminos: {amino}')
+    #print(f'Contadores: {contador}')
+
+    plt.bar(amino, contador)
+    plt.title('Cantidad de amino')
+    plt.xlabel('Amino')
+    plt.ylabel('Cantidad')
+    plt.show()
