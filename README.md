@@ -56,6 +56,16 @@ others: terminaltables halo
 demo python demo.py 
 
 ## Demo
+![Image 1](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-01.PNG)
+
+![Image 2](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-02.PNG)
+
+![Image 3](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-03.PNG)
+
+![Image 4](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-04.PNG)
+
+
+Finalmente se muestra un gráfico de barras con la cantidad de amino
 ![Chart](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-chat.PNG)
 
   
