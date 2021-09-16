@@ -5,7 +5,7 @@
 
 ## DNA to Proteins translator 
 
-Python project cointains bioinformatics tools for sequence Transcrirption and translation 
+Python project cointains bioinformatics tools for sequence Transcription and translation 
 
   
   
