@@ -3,9 +3,9 @@
 
 # Reina del Mundo's Science Fair Projects and Experiments (Peru/2021)
 
-## DNA Diet
+## DNA to Proteins translator 
 
-Python project that inform about diet of amino acid using DNA.
+Python project cointains bioinformatics tools for sequence Transcrirption and translation 
 
   
   
@@ -14,7 +14,7 @@ Python project that inform about diet of amino acid using DNA.
 
   
 
-- LUCIANA FRANCI ESPINOZA
+- LUCIANA FRANCI
 
 - SEBASTIAN CASTILLO
 
@@ -28,7 +28,7 @@ Python project that inform about diet of amino acid using DNA.
 
   
 
-## Languaje
+## Language
 
   
 
@@ -51,7 +51,7 @@ others: terminaltables halo
 
   
 
-## Usos
+## Uses
 
 demo python demo.py 
 
@@ -65,7 +65,7 @@ demo python demo.py
 ![Image 4](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-04.PNG)
 
 
-Finalmente se muestra un gráfico de barras con la cantidad de amino
+We also include charts with the amino acids and the respective amounts 
 ![Chart](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-chat.PNG)
 
   
