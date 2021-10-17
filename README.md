@@ -3,18 +3,17 @@
 
 # Reina del Mundo's Science Fair Projects and Experiments (Peru/2021)
 
-## DNA to Proteins translator 
+## DNA Diet
 
-Python project cointains bioinformatics tools for sequence Transcription and translation 
+Science Project: DNA sequences translator to proteins using Python
 
-  
   
 
 ## Team
 
   
 
-- LUCIANA FRANCI
+- LUCIANA FRANCI 
 
 - SEBASTIAN CASTILLO
 
@@ -37,7 +36,7 @@ Python project cointains bioinformatics tools for sequence Transcription and tra
   
   
 
-## Installation
+## Installation Process
 
   
 
@@ -49,6 +48,7 @@ pipenv install numpy biopython matplotlib
 
 others: terminaltables halo
 
+pipenv shell
   
 
 ## Uses
@@ -65,7 +65,7 @@ demo python demo.py
 ![Image 4](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-04.PNG)
 
 
-We also include charts with the amino acids and the respective amounts 
+Finally a graph is shown with the amino acids and the respective amounts
 ![Chart](https://github.com/lucianafranci/dna-diet/blob/main/images/demo-chat.PNG)
 
   

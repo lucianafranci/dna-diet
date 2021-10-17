@@ -2,10 +2,8 @@ from DNAToolkit import *
 from utilities import colored, readFastaFile
 import random
 
-#randDNAStr = 'TGGCTATAATAACGCTCCCACGGGTTGATGCCTTGGCAAAAGTTTGGACTATCGGTGGGACGAGACCACTGTCAGTACACGGTCCTAGCAAACACTGCCG'
+randDNAStr = 'TGGCTATAATAACGCTCCCACGGGTTGATGCCTTGGCAAAAGTTTGGACTATCGGTGGGACGAGACCACTGTCAGTACACGGTCC'
 #randDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(50)])
-#randDNAStr = readFastaFile('fasta-dna-covid.txt')
-randDNAStr = readFastaFile('fasta-dna-fen copy.txt')
 
 DNAStr = validateSeq(randDNAStr)
 print('---------------------------------------------------------------------------')
@@ -32,7 +30,7 @@ print('[PROCESO N° 4] - DNA String + Reverse Complement: \n')
 print(f"5' {colored(DNAStr)} 3'")
 print(f"   {''.join(['|' for c in range(len(DNAStr))])}")
 print(f"3' {colored(complement(DNAStr))} 5'  [Complement]\n")
-#print(f"5' {colored(reverse_complement(DNAStr))} 3'  [Reverse Complement]")
+print(f"5' {colored(reverse_complement(DNAStr))} 3'  [Reverse Complement]")
 
 print('---------------------------------------------------------------------------')
 print(f'[PROCESO N° 5] - GC Content: {gc_content(DNAStr)}%\n')
@@ -49,11 +47,11 @@ aminoStr = translate_seq(DNAStr, 0)
 print(aminoStr)
 
 print('---------------------------------------------------------------------------')
-print('[PROCESO N° 8] + Amino names:')
+print('[PROCESO N° 8] - Amino names:')
 name_from_amino(aminoStr)
 
 print('---------------------------------------------------------------------------')
-print('[PROCESO N° 9] + Not found amino names:')
+print('[PROCESO N° 9] - Not found amino names:')
 print(f'Total not found amino count: {amino_not_present(aminoStr)}')
 
 print('---------------------------------------------------------------------------')

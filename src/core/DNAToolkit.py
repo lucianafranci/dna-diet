@@ -2,7 +2,7 @@ import collections
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Counter
-from structures import *
+from config.structures import *
 
 
 def validateSeq(dna_seq):
