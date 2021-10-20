@@ -1,8 +1,0 @@
-PENDIENTES PARA MEJORAR EL SISTEMA
-1) Controlar si la secuencia de DNA vienen caracteres que no son nucleotidos (diferente de "A", "C", "G", "T")
-2) Citar fuentes
-3) GC Content ¿por que es importante?
-4) Asociar proteinas a los alimentos
-
-Investigar https://biopython.org/
-leer fasta -> https://www.biostars.org/p/710/
