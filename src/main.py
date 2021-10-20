@@ -38,9 +38,9 @@ print('-------------------------------------------------------------------------
 print('[PROCESO N° 4] - Cadena de ADN + Complemento inverso: \n')
 print(f"5' {colored(DNAStr)} 3'")
 print(f"   {''.join(['|' for c in range(len(DNAStr))])}")
-print(f"3' {colored(complement(DNAStr))} 5'  [Complement]\n")
+print(f"3' {colored(complement(DNAStr))} 5'  [Complemento]\n")
 
-print(f"5' {colored(reverse_complement(DNAStr))} 3'  [Reverse Complement]")
+print(f"5' {colored(reverse_complement(DNAStr))} 3'  [Complemento Reverso]")
 
 print('---------------------------------------------------------------------------')
 print(f'[PROCESO N° 5] - Contenido de GC: {gc_content(DNAStr)}%\n')

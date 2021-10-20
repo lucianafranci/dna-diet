@@ -132,8 +132,8 @@ def name_from_amino(aa_seq, init_pos=0):
             print(f' {amino} - {AMINO_NAME[amino]} ({amino_count[amino]})')
             contador = contador + 1
 
-    print(f'Total Amino count: {len(aa_seq_unique)}')
-    print(f'Total Amino count: {amino_count}')
+    print(f'Cantidad total de aminoácidos: {len(aa_seq_unique)}')
+    print(f'Cantidad total de aminoácidos: {amino_count}')
     return
 
 
@@ -147,7 +147,7 @@ def amino_not_present(aa_seq):
     # print(aa_not_found)
 
     # de la lista de amino, mostrar los no repetidos
-    print('Amino no encontrados...')
+    #print('Amino no encontrados...')
     for amino in aa_not_found:
         # contador = 0
         if amino != "_":

@@ -3,13 +3,14 @@ from core.utilities import colored, readFastaFile
 import random
 
 # https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta
-randDNAStr = readFastaFile('./fasta-files/fasta-dna-covid.txt')
+#randDNAStr = readFastaFile('./fasta-files/fasta-dna-covid.txt')
 
 # https://www.ncbi.nlm.nih.gov/nuccore/U49897.1?report=fasta
 #randDNAStr = readFastaFile('./fasta-files/fasta-dna-covid.txt')
 
 # randDNAStr = readFastaFile('./fasta-files/fasta-liver-carboxylesterase.txt') 
 #randDNAStr = readFastaFile('./fasta-files/fasta-dna-fen.txt')
+randDNAStr = readFastaFile('./fasta-files/fasta-RANDOM.txt')
 
 DNAStr = validateSeq(randDNAStr)
 print('---------------------------------------------------------------------------')
@@ -33,7 +34,7 @@ print('-------------------------------------------------------------------------
 print('[PROCESO N° 4] - Cadena de ADN + Complemento inverso: \n')
 print(f"5' {colored(DNAStr)} 3'")
 print(f"   {''.join(['|' for c in range(len(DNAStr))])}")
-print(f"3' {colored(complement(DNAStr))} 5'  [Complement]\n")
+print(f"3' {colored(complement(DNAStr))} 5'  [Complemento]\n")
 
 #print(f"5' {colored(reverse_complement(DNAStr))} 3'  [Reverse Complement]")
 

@@ -68,6 +68,30 @@ AMINOS = ["A", "C", "D", "E", "F", "G", "H", "I", "K", "L",
 #
 # Nombre de cada nucleotido
 AMINO_NAME = {
+    "A": "ALANINA",
+    "C": "CISTEINA",
+    "D": "ACIDO ASPARTICO",
+    "E": "ACIDO GLUTAMICO",
+    "F": "FENILALANINA",
+    "G": "GLICINA",
+    "H": "HISTIDINA",
+    "I": "ISOLEUCINA",
+    "K": "LISINE",
+    "L": "LEUCINA",
+    "M": "METIONINA",
+    "N": "ASPARAGINA",
+    "P": "PROLINA",
+    "Q": "GLUTAMINA",
+    "R": "ARGININA",
+    "S": "SERINA",
+    "T": "TREONINA",
+    "V": "VALINA",
+    "W": "TRIPTOFANO",
+    "Y": "TIROSINA",
+    "_": "END"
+}
+
+AMINO_NAME_ENG = {
     "A": "ALANINE",
     "C": "CISTEINE",
     "D": "ASPARTIC ACID",
