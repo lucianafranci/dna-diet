@@ -2,21 +2,29 @@ from core.DNAToolkit import *
 from core.utilities import colored, readFastaFile
 import random
 
-randDNAStr = 'TGGCTATAATAACGCTCCCACGGGTTGATGCCTTGGCAAAAGTTTGGACTATCGGTGGGACGAGACCACTGTCAGTACACGGTCCTAGCAAACACTGCCG'
+#randDNAStr = 'TGGCTATAATAACGCTCCCACGGGTTGATGCCTTGGCAAAAGTTTGGACTATCGGTGGGACGAGACCACTGTCAGTACACGGTCCTAGCAAACACTGCCG'
+
+# https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta
+# randDNAStr = readFastaFile('./fasta-files/fasta-dna-covid.txt')
+
+# https://www.ncbi.nlm.nih.gov/nuccore/U49897.1?report=fasta
+# randDNAStr = readFastaFile('./fasta-files/fasta-dna-covid.txt')
+
+# randDNAStr = readFastaFile('./fasta-files/fasta-liver-carboxylesterase.txt') 
+
+#randDNAStr = readFastaFile('./fasta-files/fasta-dna-fen.txt')
+
 #randDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(50)])
-#randDNAStr = readFastaFile('fasta-dna-covid.txt')
 
 DNAStr = validateSeq(randDNAStr)
 print('---------------------------------------------------------------------------')
 print('PROYECTO DE CIENCIAS: TRADUCTOR DE ADN A PROTEINAS')
-
 
 print('---------------------------------------------------------------------------')
 print(f'\nSECUENCIA: {colored(DNAStr)}\n')
 
 print('---------------------------------------------------------------------------')
 print(f'[PROCESO N° 1] - Longitud de la secuencia: {len(DNAStr)}\n')
-
 
 print('---------------------------------------------------------------------------')
 print(colored(
